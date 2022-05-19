@@ -1,6 +1,7 @@
 import React, { useEffect, useState} from 'react';
+import {Redirect } from 'react-router';
 
-import { Link, useNavigate,Route, Routes } from "react-router-dom";
+import { Link, useNavigate,Route, Routes, Router } from "react-router-dom";
 
 import Main from './components/Main';
 
@@ -44,19 +45,27 @@ function App() {
      <div className="container">
         <nav>
           <ul>
-            <li><Link to="/main"> BitTelligence </Link></li>
+            <li><Link to="/"> BitTelligence </Link></li>
           </ul>
           <ul>
             {_contact}
           </ul>
         </nav>
+         
         <Routes>
-        <Route path="/main" element={<Main/>} />
+        <Route  path="/"  element={<Main/>} /> 
         <Route path="/contact" element={<Contact/>} />
         </Routes>
+       
      </div>
+     
     </div>
   );
+  
 }
 
+
 export default App;
+
+
+// <Route path="/main" element={<Main/>} /> 
