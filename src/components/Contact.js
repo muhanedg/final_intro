@@ -5,7 +5,7 @@ const Contact = () => {
 
     const history = useNavigate();
     const goBack = () => {
-        history.goBack();
+        history('/');
     }
 
     const [title, setTitle] = useState("");
@@ -27,7 +27,7 @@ const Contact = () => {
 
     return(
         <React.Fragment>
-           <button className="back" onClick={goBack}> &larr; Go Back</button>
+           <button className="back" onClick={(e) => goBack()}> &larr; Go Back</button>
 
             <form className="contact" onSubmit={sendEmail}>
                 <h2>Send me a message so we can start a new project</h2>

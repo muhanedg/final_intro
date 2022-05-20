@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React ,{useState, Footer} from "react";
 
 import { Link, useNavigate } from "react-router-dom";
 
@@ -28,7 +28,7 @@ const Main = () => {
                     <h1>BitIntellegence</h1>
                     <p>  Provide a starting point for analysis and 
                         investigation of potentially criminal bitcoin wallets. </p>
-                    <Link to="/contact">Get in touch</Link>
+                    <Link to="/graph">Get Started</Link>
                 </div>
           
             </header>
@@ -36,14 +36,19 @@ const Main = () => {
 
             <main>
                 <section className="services">
-                     <h2>Why we should work together?</h2>
+                     <h2>Header</h2>
 
                      <div className="service-container">
                          <div className="services-card service-one"></div>
                          <div className="service-description">
 
-                            <h3>SEO Friendly Apps.</h3>
-                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt massa sem. Vestibulum quis augue ac orci bibendum pellentesque ut nec dolor. Quisque metus ipsum, pulvinar quis ipsum quis, consequat cursus leo. Suspendisse fermentum, nisl et ultricies blandit, mauris metus accumsan mauris, sit amet vulputate elit nunc id libero. Vivamus porta lacus libero, et ullamcorper est volutpat ac. Maecenas eros urna, interdum in lectus nec, tristique semper mauris. Duis finibus nunc sed nulla bibendum, ut ornare tellus finibus. Donec id magna risus.</div>
+                            <h3>Why Track Wallets?</h3>
+                            <div>Suspicious activity has been an issue with cryptocurrency, 
+                                and its only getting worse. To help find this suspicious activity,
+                                we are providing a starting point for analysis and 
+                                investigation of potentially criminal bitcoin wallets,
+                                by automatically collecting and displaying information
+                                 that may be useful in an investigation</div>
 
                          </div>
                     </div>
@@ -54,8 +59,11 @@ const Main = () => {
                       
                       <div className="services-card service-two"></div>
                       <div className="service-description">
-                          <h3>Clear &amp; Optimized Code.</h3>
-                          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt massa sem. Vestibulum quis augue ac orci bibendum pellentesque ut nec dolor. Quisque metus ipsum, pulvinar quis ipsum quis, consequat cursus leo. Suspendisse fermentum, nisl et ultricies blandit, mauris metus accumsan mauris, sit amet vulputate elit nunc id libero. Vivamus porta lacus libero, et ullamcorper est volutpat ac. Maecenas eros urna, interdum in lectus nec, tristique semper mauris. Duis finibus nunc sed nulla bibendum, ut ornare tellus finibus. Donec id magna risus.</div>
+                          <h3>How The Graph Works</h3>
+                          <div> The information displayed on the graph will include
+                                the balance of the wallet as well as a directed graph 
+                                of all other wallets which have transacted with the 
+                                target along with the amount, direction, and time of all transactions.</div>
                       </div>
                     </div>
 
@@ -64,25 +72,25 @@ const Main = () => {
                     <div className="service-container">
                         <div className="services-card service-three"></div>
                         <div className="service-description">
-                            <h3>Support 24 hours.</h3>
-                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt massa sem. Vestibulum quis augue ac orci bibendum pellentesque ut nec dolor. Quisque metus ipsum, pulvinar quis ipsum quis, consequat cursus leo. Suspendisse fermentum, nisl et ultricies blandit, mauris metus accumsan mauris, sit amet vulputate elit nunc id libero. Vivamus porta lacus libero, et ullamcorper est volutpat ac. Maecenas eros urna, interdum in lectus nec, tristique semper mauris. Duis finibus nunc sed nulla bibendum, ut ornare tellus finibus. Donec id magna risus.</div>
+                            <h3>Marking Suspicious Activity</h3>
+                            <div>In the graph, you can flag the suspicious wallets
+                                that the user wants to keep and eye on. You can flag
+                                wallet with three different sevarity levels, green, 
+                                yellow and red. </div>
                         </div>
                       
                     </div>
                 </section>
 
                 <section>
-                    <h2>Join our newsletter to get the latest trends.</h2>
-
-                    <form className="newsletter" onSubmit={join}>
-                        <input type="email" placeholder="Your email goes here" onChange={(e) => setJoined(e.target.value)} />
-                        <input type="submit"  value="Join Now!"/>
-                    </form>
+                    <h2>Footer?</h2>
+        
+                   
 
                 </section>
             </main>
 
-
+           
         </React.Fragment>
     )
 }

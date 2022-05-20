@@ -38,6 +38,10 @@ function App() {
   if(showContact !== "/contact"){
     _contact = (<li><Link to="/contact">About Us</Link></li>)
   }
+  let _graph;
+  if(showContact !== "/graph"){
+    _graph = (<li><Link to="/graph">Graph</Link></li>)
+  }
 
 
   return (
@@ -48,8 +52,11 @@ function App() {
             <li><Link to="/"> BitTelligence </Link></li>
           </ul>
           <ul>
+            {_graph}
+            <span class="vertical-line"></span>
             {_contact}
           </ul>
+          
         </nav>
          
         <Routes>
